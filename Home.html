@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soy Hub</title>
+        <link rel="icon" href="logo-no-background.png">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&family=Alkatra&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <!-- SWIPER.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <!-- Remix Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="dropdown.css">
+    </head>
+    <body>
+
+        <!-------------------- PRELOADER -------------------->
+        <div class="preloader">
+            <span class="loader"></span>
+        </div>
+        
+        <!-------------------- SCROLL TO TOP BUTTON -------------------->
+        <div id="scrollTop" onclick="scrollToTop()">
+            <i class="ri-arrow-up-line"></i>
+        </div>
+
+        <!-------------------- Header -------------------->
+        <div class="home" id="home">
+            <nav>
+                <a href="index.html" class="logo"><img src="logo-no-background.png" width= 200px></a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home" class="pages">Home</a>
+                        </li>
+                        <li>
+                            <a href="product.html" class="pages">Product</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="pages">About</a>
+                        </li>
+                        <li>
+                            <a href="Featured farmer.html" class="pages">Featured Farmers</a>
+                        </li>
+                        <div class="dropdown">
+                            <button class="dropdown-button">Learn</button>
+                            <div class="dropdown-content">
+                              <a href="educate.html">Education</a>
+                              <a href="Workshop.html">WorkShops</a>
+                            </div>
+                          </div>
+                        <li>
+                            <a href="contact.html" class="pages">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="nav-close" id="nav-close" onclick="hideNav()">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- TOGGLE DARK/LIGHT MODE Later -->
+                <i class="ri-moon-line" id="moon" onclick="changeToDark()"></i>
+                <i class="ri-sun-line" id="sun" onclick="changeToLight()"></i>
+
+                <div class="nav-toggle" id="nav-toggle" onclick="showNav()">
+                    <i class="ri-apps-line" id="toggle"></i>
+                </div>
+            </nav>
+            <!-- LANDING PAGE -->
+            <div class="header" id="header">
+                <div class="content" data-inViewport="slideTop">
+                    <h2 id="title"><span>Soy</span>Hub</h2>
+                    <p>
+                        SoyHub is a pioneering venture dedicated to transforming the soybean farming industry in Kenya.  <br>
+                        We are committed to empowering farmers by providing comprehensive training and support to optimize soybean cultivation and increase profitability. <br>
+                         Our mission is to eliminate exploitation by middlemen and bridge the gap between farmers and the market.  <br>
+                         By equipping farmers with knowledge, skills, and resources, we aim to create a sustainable and prosperous future for soybean farmers.
+                         <br>                    </p>
+                    <button onclick="scrollToAbout()">Learn more!<i class="ri-arrow-right-line"></i></button>
+                </div>
+                <img src="assests/basket.png" data-inViewport="slideLeft">
+            </div>
+        </div>
+        <!--------------------  ABOUT -------------------->
+        <div class="about" id="about">
+            <h2>About</h2>
+            <div class="content first">
+                <img src="IMG_20221228_113947_794.jpg" data-inViewport="slideLeftDown">
+                <p data-inViewport="slideLeft"><span>Overview</span><br>SoyHub is a comprehensive website dedicated to providing information and resources about soybeans. Our platform serves as a hub for all things related to soybeans, covering topics such as cultivation, harvesting, processing, and utilization. We aim to educate and empower individuals interested in soybeans, whether they are farmers, researchers, or simply curious learners. Through our website, users can access valuable insights, guides, and articles to enhance their understanding of soybeans' importance, nutritional benefits, and diverse applications. Join us at SoyHub to explore the fascinating world of soybeans and discover the many ways they contribute to our lives and global agriculture.<br></p>
+            </div>
+            <div class="content">
+                <p data-inViewport="slideLeft"><span>Why Choose Us?</span><br>Comprehensive Training Programs: <br>Value Addition Expertise<br>Market Access and Linkages:<br>Financial Literacy and Support<br>Sustainable Farming Practices<br>Market Gap and Opportunities.
+
+                </p>
+                <img src="assests/grass.png" id="special" data-inViewport="slideLeft">
+            </div>
+        </div>
+        <!-------------------- Featured Products ------------------>
+        <div class="featured" id="featured">
+            <h2>Featured Products</h2>
+            <p>Here are some featured organic products we provide. Check them out!</p>
+            <!-- Swiper -->
+            <div class="swiper" data-inViewport="slideTop">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Organic Carrot<br><sub>$3 per 500g</sub></h2>
+                        <img src="assests/carrots.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Juicy Oranges<br><sub>$3 per 1kg</sub></h2>
+                        <img src="assests/oranges.jpeg">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Summer Watermelon<br><sub>$4 per 1kg</sub></h2>
+                        <img src="assests/seed.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <i class="ri-heart-line"></i>
+                        <h2>Fresh Tomatoes<br><sub>$5 per 500g</sub></h2>
+                        <img src="assests/grass.png">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="featured" id="featured">
+                <h2>Featured farmers</h2>
+                <p>Here are some featured  farmers. Check them out!</p>
+                <!-- Swiper -->
+                <div class="swiper" data-inViewport="slideTop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <i class="ri-heart-line"></i>
+                            <h2>Common Genius<br><sub>Central Hub</sub></h2>
+                            <img src="IMG-20230104-WA0011.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="ri-heart-line"></i>
+                            <h2>John Kiprop<br><sub>Coastal Hub</sub></h2>
+                            <img src="IMG_20221228_114036_752.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="ri-heart-line"></i>
+                            <h2>Grace Wangari<br><sub>Western Hub</sub></h2>
+                            <img src="IMG_20221228_113947_794.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="ri-heart-line"></i>
+                            <h2>Peter Mwaura<br><sub>Riftvalley Hub</sub></h2>
+                            <img src="IMG-20230104-WA0011.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                            
+        <!-------------------- Tour ------------------>
+        <div class="tour" id="tour">
+            <h2>Tour</h2>
+            <p>Sign up for our farm tour and get free <br> SoyBeans Farming News</p>
+            <div class="signup">
+                <img src="subscribe.svg">
+                <form>
+                    <input type="email" placeholder="Enter Email" required="required" id="email" autocomplete="off">
+                    <button type="submit" class="signUpBtn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+      
+        <!-------------------- FOOTER ------------------->
+        <div class="footer">
+            <div class="links">
+                <ul>
+                    <h2>Overview</h2>
+                    <li><a href="#">Prices</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Privacy & Policy</a></li>
+                </ul>
+                <ul>
+                    <h2>Others</h2>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+            <p>© Copywite by SoyHub Developers <br>
+                
+            </p>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
