@@ -1,0 +1,68 @@
+
+Body {  
+    background-color: orange; 
+    text-align: center;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130vh;
+      margin: 30px;
+  }
+  .logo-container {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+  }
+  
+  img {
+    max-width: 15%;
+    height: auto;
+  }
+  
+  h1{
+    align-items: center;
+  }
+  button {   
+    background-color:rgb(107,114,128); 
+    width: 10%;  
+          color: #520c17;   
+          padding: 15px;   
+          margin: 10px 0px;   
+          border: none;   
+          cursor: pointer;   
+           }   
+   form {   
+          border: 3px solid rgb(107,114,128);   
+      }   
+   input[type=text], input[type=password] {   
+          width: 40%;   
+          margin: 30px 30px;  
+          padding: 15px 30px;   
+          display: inline-block;   
+          border: 2px solid rgb(107,114,128);   
+          box-sizing: border-box; 
+          background-color: D2D9D1;  
+      }  
+   button:hover {   
+          opacity: 0.7;   
+      }   
+    .cancelbtn {   
+          width: auto;   
+          padding: 10px 18px;  
+          margin: 10px 5px;  
+      }   
+          
+       
+   .container {   
+          padding: 20px;   
+          background-color:FFFFFF;
+          width: auto;  
+          align-items: center;
+          padding: 20px;
+          height: 90%;
+          border-radius: 25px;
+          box-shadow: 0 2px 5px rgb(107,114,128);
+          text-align: center;
+      }
